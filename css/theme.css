@@ -400,7 +400,13 @@ footer li a{
 	padding: 1rem;
 	margin: 0 auto;
 }
-
+a{
+	padding: 10px;
+}
+a:hover{
+	background-color: #3ddd0c;
+	color: black;
+}
 .secondary-footer p{
 	margin: 0;
 	font-size: 0.8rem;
