@@ -1,5 +1,7 @@
 $(document).ready(function () {
   //$("body").css("overflow", "hidden");
+
+
   let observar = [true, true, true, true];
   const elementosObservados = [".redes", "#about-us", "#services", "#contact"];
   let guia = true;
