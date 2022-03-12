@@ -25,6 +25,7 @@ body {
 	background: #100e0e;
     color: white;
     text-shadow: 1px 1px 1px black;
+	text-transform: capitalize;
 	/* animation: animarBody 60s; */
 }
 
@@ -69,11 +70,9 @@ p {
 
 /* Links
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-a {
-	color: #1EAEDB; 
-}
-a:hover {
-	color: #0FA0CE; 
+a:hover, a:focus {
+	background-color: #fff;
+	color: #000;
 }
 
 img {
@@ -164,9 +163,28 @@ hr {
 span{
 	margin: 20px;
 }
+svg{ 
+	padding:5px;
+	margin: 10px auto;
+}
 
-svg:hover{
+.team-name{
+	margin:  10px 50px;
+	width: 100px;
+	height:100px;
+	text-align:center;
+
+
+}
+.team-name:hover{
 	fill: #0FA0CE;	
+	transform:scale(1.3);
+	animation: fade-in 2s;
+	color: #000000;
+	background-color: #fff;
+	border-radius: 25px;
+	text-shadow: none;
+	font-weight: bolder;
 }
 .redes{
 	display: flex;
@@ -184,6 +202,11 @@ svg:hover{
 	margin-right: 1rem;
 }
 
+.navigation-bar nav a:hover{
+	color: #fff;
+	text-decoration: none;
+	margin-right: 1rem;
+}
 
 .hero {
 	background-position: center;
@@ -405,9 +428,11 @@ a{
 }
 a:hover{
 	border-radius: 15px;
-	background-color: #3ddd0c;
-	color: black;
+	background-color: #0ab5bb;
+	font-size: 1.1rem;
 	animation: zoomInUp 1s;
+	font-weight: bolder;
+
 }
 
 @keyframes flipInX {
@@ -479,7 +504,8 @@ a:hover{
 		margin:  0 auto;
 	}
 	.navigation-bar nav{
-		display: none;
+		display: flex;
+		text-align: center;
 	}
 
 	.row {
