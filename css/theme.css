@@ -16,7 +16,7 @@ html {
 
 
 body {
-	font-size: 1.0em; /* currently ems cause chrome bug misinterpreting rems on body element */
+	font-size: 0.9em; /* currently ems cause chrome bug misinterpreting rems on body element */
 	line-height: 1.6;
 	font-weight: 400;
 	font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -28,6 +28,17 @@ body {
 	text-transform: capitalize;
 	/* animation: animarBody 60s; */
 }
+
+.menu-side{
+	list-style: none;
+	text-align: center;
+}
+.menu-side a{
+	 text-decoration: none;
+	 padding:10px;
+	 color: white;
+ }
+
 
 .bg-dark{
 	background: black;
@@ -70,6 +81,14 @@ p {
 
 /* Links
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+a{
+	padding: 10px;
+	
+}
+
+
+
 a:hover, a:focus {
 	background-color: #fff;
 	color: #000;
@@ -172,7 +191,6 @@ svg{
 	margin:  10px 50px;
 	width: 100px;
 	height:100px;
-	text-align:center;
 
 
 }
@@ -192,6 +210,15 @@ svg{
 	justify-content: center;
 }
 
+.menu-btn{
+	right: 5px;
+	background: transparent;
+}
+
+.menu-btn:hover{
+	background: #fff;
+	color: #000;
+}
 .navigation-bar nav ul li{
 	display: inline-block;
 }
@@ -203,11 +230,17 @@ svg{
 }
 
 .navigation-bar nav a:hover{
-	color: #fff;
+	color: rgb(0, 0, 0);
 	text-decoration: none;
 	margin-right: 1rem;
+	font-weight:bolder;
+	transform:scale(1.2);
 }
 
+
+.btn-close{
+	color: white;
+}
 .hero {
 	background-position: center;
 	background-repeat: no-repeat;
@@ -255,6 +288,10 @@ svg{
 	max-width: 16px;
 }
 
+.row a:hover{
+	padding:none;
+
+}
 
 /* Hover */
 
@@ -302,7 +339,9 @@ svg{
 	max-width: 64px;
 }
 
-
+.al{
+	margin: 0px;
+}
 /* cta */
 
 
@@ -423,16 +462,13 @@ footer li a{
 	padding: 1rem;
 	margin: 0 auto;
 }
-a{
-	padding: 10px;
-}
+
 a:hover{
+	color: black;
+	background-color:white;
 	border-radius: 15px;
-	background-color: #0ab5bb;
-	font-size: 1.1rem;
 	animation: zoomInUp 1s;
 	font-weight: bolder;
-
 }
 
 @keyframes flipInX {
@@ -504,8 +540,7 @@ a:hover{
 		margin:  0 auto;
 	}
 	.navigation-bar nav{
-		display: flex;
-		text-align: center;
+		display: none;
 	}
 
 	.row {
